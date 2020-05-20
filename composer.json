@@ -1,0 +1,12 @@
+{
+  "name": "asingh/328/midterm",
+  "authors": [
+    {
+      "name": "Arshdeep Singh",
+      "email": "asingh69@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
