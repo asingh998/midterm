@@ -33,7 +33,7 @@ $f3->route('GET|POST /survey', function($f3) {
 
         //Validate the data
 
-        if (empty($_POST['name'])) {
+        if (empty($_POST['name']) || !in_array($_POST['choices'], $choices)) {
             echo "<p>Please enter a name</p>";
         }
         //Data is valid
@@ -58,7 +58,7 @@ $f3->route('GET /summary', function() {
 
     $views = new Template();
     echo $views->render('views/summary.html');
-
+    session_destroy();
 });
 
 //Run F3

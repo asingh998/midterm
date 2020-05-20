@@ -9,9 +9,9 @@
 <div class="container">
     <h1>Midterm Survey</h1>
     <p>Thank you for taking the survey, {{ @SESSION.name }}</p>
-    <!--<check if="{{ isset(@SESSION.conds) }}">
-        <p>Your answers:  {{ implode(@SESSION.conds, ", ") }}</p>
-    </check>-->
+    <check if="{{ isset(@SESSION.choices) }}">
+        <p>Your answers:  {{ implode(@SESSION.choices, ", ") }}</p>
+    </check>
 
 </div>
 
